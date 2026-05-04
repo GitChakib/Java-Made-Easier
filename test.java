@@ -1,25 +1,21 @@
-class personne{
+class produit{
 
+    private String name;
+    private double  price;
 
-    private String nom;
-    private int age; 
-
-    public personne (String n, int a){
-
-        nom = n;
-        age = a;
+    public String getname(){
+        return name;
+    }
+    public void setname(){
+        this.name = name;
     }
 
-    public void afficher(){
-        System.out.println("le nom est: \n"+nom+  "\nl'age est: \n" +age);
+    public void applydiscount(){
+        this.price  = price * 0.5;
     }
 
-}
-class test{
-    
-    public static void main(String[] args) {
-        
-        personne x = new personne("ahmed", 20);
-        x.afficher();
+    public produit(String n, double p){
+        name = n;
+        price = p;
     }
 }
