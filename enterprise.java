@@ -8,7 +8,7 @@ class employee{
         wage = w;
     }
     void displayemp(){
-        System.out.println("name is: "+name+ "surname is: " +surname+ "wage is: " +wage);
+        System.out.println("\nname is: "+name+ "\nsurname is: " +surname+ "\nwage is: " +wage);
     }
 }
     class manager extends employee{

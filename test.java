@@ -6,7 +6,7 @@ class produit{
     public String getname(){
         return name;
     }
-    public void setname(){
+    public void setname(String name){
         this.name = name;
     }
 
@@ -17,5 +17,19 @@ class produit{
     public produit(String n, double p){
         name = n;
         price = p;
+    }
+    public void displayprod(){
+        System.out.println("the name is: " +name);
+    }
+}
+
+class test{
+
+    public static void main(String[] args){
+
+    produit sel = new produit("", 200);
+    sel.getname();
+    sel.setname("NaCl");
+    sel.displayprod();
     }
 }
